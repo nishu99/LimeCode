@@ -1,0 +1,89 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import "bootstrap";
+
+.alert{
+  background-color: #FF0000 !important;
+}
+
+body {
+  padding-top:25px;
+  margin-left:10px;
+  margin-right:10px;
+}
+.container {
+  margin:0 auto;  
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  border-radius:6px;
+  background-color:#FAFAFA;
+}
+.head {
+  -webkit-border-radius:6px 6px 0px 0px;
+  -moz-border-radius:6px 6px 0px 0px;
+  border-radius:6px 6px 0px 0px;
+  background-color:#2ABCA7;
+  color:#FAFAFA;
+}
+
+h2 {
+  text-align:center;
+  padding:18px 0 18px 0;
+  font-size: 1.4em;
+}
+input {
+  margin-bottom:10px;
+}
+
+form button {
+  margin-top:15px;
+  margin-bottom:25px;
+  background-color:#2ABCA7;
+  padding: 12px 45px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  border: 1px solid #2ABCA7;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: inline-block;
+  cursor: pointer;
+  width:30%;
+  color:#fff;
+}
+button:hover, .button:hover {
+  background:#19a08c;
+}
+
+
+@media (max-width: 700px) {
+  label.error {
+    width: 90%;
+  }
+  input, textarea {
+    width: 90%;
+  }
+  button {
+    width:90%;
+  }
+  body {
+  padding-top:10px;
+  }  
+}
+
+form, .footer{
+  text-align: center;
+}

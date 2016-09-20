@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LimTestCoding</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <%= render partial: "layouts/flash_message", flash: flash %> 
+  <div class="container">
+    <%= yield %>
+    <%= render partial: "layouts/footer_link" %>
+  </div>  
+</body>
+</html>

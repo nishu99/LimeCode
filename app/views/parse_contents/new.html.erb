@@ -1,0 +1,10 @@
+<%= form_for @parse_content do |f| %>
+  <div class="container">
+    <div class="head">
+      <h2>Parse Content</h2>
+    </div>
+    <%= f.text_field :url, placeholder: :url, required: true %>  
+    <br/>
+    <%=f.submit %>
+  </div>
+<%end%>

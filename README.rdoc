@@ -1,0 +1,11 @@
+== README
+
+
+1. configure the project.
+2. Run bundle command.
+3. rake db:create
+4. rake db:migrate
+
+
+and you are ready to rock here!!
+
